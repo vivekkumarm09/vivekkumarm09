@@ -64,7 +64,16 @@ I build **AI-powered systems** — from LLM agents that can reason and act auton
 > **Problem:** Manually researching and summarising information from multiple sources is slow and error-prone.  
 > **Built:** Autonomous LLM agent using LangGraph with tool-calling, web search, and memory — answers complex queries end-to-end.  
 > **Tech:** `LangGraph` `LangChain` `OpenAI` `ChromaDB` `RAG`  
-> 📂 [View Repo](#) &nbsp;|&nbsp; 🔗 [Live Demo](#)
+> 📂 [View Repo](https://github.com/vivekkumarm09/Multi-Agent-Research-Assistant-Langgraph/tree/master/Multi-Agent-Research-Assistant-Langgraph-main) &nbsp;|&nbsp; 🔗 [Live Demo](#)
+
+---
+
+### 📄 Document Intelligence System *(OCR + LLM + NER)*
+> **Problem:** Businesses drown in unstructured documents — PDFs, scanned files, images — with no fast way to extract insights.  
+> **Built:** End-to-end AI pipeline that ingests PDFs & scanned images → runs OCR → LLM summarisation → Named Entity Recognition, all served via a Flask web app.  
+> **Tech:** `OpenCV` `Tesseract OCR` `HuggingFace (BART, BERT-NER)` `Flask` `Python`  
+> **Impact:** Converts raw unstructured documents into structured summaries + extracted entities (people, orgs, dates) in seconds — zero manual effort.  
+> 📂 [View Repo](https://github.com/vivekkumarm09/Generative-AI-Document-Intelligence-System)
 
 ---
 
@@ -127,8 +136,8 @@ vivek = {
     <img src="https://img.shields.io/badge/LinkedIn-Vivek%20Kumar%20Mishra-0A66C2?style=flat&logo=linkedin&logoColor=white" />
   </a>
   &nbsp;
-  <a href="mailto:youremail@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-youremail@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white" />
+  <a href="mailto:vivemishra9801@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-vivemishra9801@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white" />
   </a>
   &nbsp;
   <a href="https://github.com/vivekkumarm09">
