@@ -1,284 +1,508 @@
+<!-- ============================================================
+     VIVEK KUMAR MISHRA — GITHUB PROFILE README
+     Industry-Level | Animated | Unique | 3D Design
+     ============================================================ -->
+
 <div align="center">
 
-<!-- Animated Header Banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:16213e&height=200&section=header&text=Vivek%20Kumar%20Mishra&fontSize=50&fontColor=00d4ff&animation=fadeIn&fontAlignY=38&desc=Data%20Science%20Engineer%20%7C%20ML%20%7C%20AI%20%7C%20Deep%20Learning&descAlignY=55&descSize=18&descColor=a0aec0" />
+<img src="https://capsule-render.vercel.app/api?type=venom&height=280&text=Vivek%20Kumar%20Mishra&fontSize=55&color=0:050b2e,25:0d1b4b,50:102a6b,75:0d1b4b,100:050b2e&fontColor=00f5ff&animation=fadeIn&stroke=00f5ff&strokeWidth=2&desc=⚡%20Data%20Science%20Engineer%20%7C%20AI%20%7C%20ML%20%7C%20Agentic%20Systems&descSize=17&descAlignY=68&descColor=7dd3fc" width="100%" />
 
-<!-- 3D Typing SVG -->
-<a href="https://github.com/vivekkumarm09">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3000&pause=800&color=00D4FF&center=true&vCenter=true&multiline=false&width=600&lines=%F0%9F%A7%A0+Building+Intelligent+Systems;%F0%9F%94%AC+Turning+Data+into+Insights;%F0%9F%A4%96+Machine+Learning+%26+Deep+Learning;%F0%9F%93%8A+Data+Visualization+Expert;%F0%9F%8F%A5+Medical+AI+%26+Computer+Vision;%F0%9F%9A%80+Passionate+Data+Science+Engineer" alt="Typing SVG" />
-</a>
+</div>
+
+<!-- LIVE TERMINAL PROMPT -->
+<div align="center">
+
+```bash
+$ whoami
+> vivek_kumar_mishra :: data_science_engineer
+
+$ cat specializations.txt
+> Agentic AI Systems  |  Document Intelligence  |  Deep Learning
+> Medical Computer Vision  |  NLP & Sentiment Analysis  |  MLOps
+
+$ uptime --passion
+> Building intelligent systems that think, learn, and act  ∞
+```
+
+</div>
+
+<!-- ANIMATED TYPING -->
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2500&pause=600&color=00F5FF&center=true&vCenter=true&width=700&lines=%F0%9F%A4%96+Agentic+AI+%7C+Autonomous+Reasoning+Systems;%F0%9F%93%84+Document+Intelligence+%26+Information+Extraction;%F0%9F%A7%A0+Deep+Learning+%7C+TensorFlow+%7C+PyTorch;%F0%9F%8F%A5+Medical+AI+%7C+Chest+X-Ray+Diagnosis+with+CNN;%F0%9F%9A%80+Turning+Raw+Data+into+Real-World+Impact;%F0%9F%94%AC+Agricultural+AI+%7C+Precision+Forecasting" alt="typing" />
+</div>
+
+<!-- PROFILE BADGES -->
+<div align="center">
+<br/>
+
+[![Profile Views](https://komarev.com/ghpvc/?username=vivekkumarm09&label=PROFILE+VIEWS&color=00f5ff&style=for-the-badge&logo=eye)](https://github.com/vivekkumarm09)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vivek-mishra-2619542a2)
+[![GitHub](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vivekkumarm09)
+[![Open to Work](https://img.shields.io/badge/OPEN%20TO%20WORK-✅-00d26a?style=for-the-badge)](https://www.linkedin.com/in/vivek-mishra-2619542a2)
 
 <br/>
 
-<!-- Animated Profile Views + Social Badges -->
-<p>
-  <img src="https://komarev.com/ghpvc/?username=vivekkumarm09&label=PROFILE+VIEWS&color=00d4ff&style=for-the-badge" />
-  &nbsp;
-  <a href="https://www.linkedin.com/in/vivek-mishra-2619542a2">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/vivekkumarm09">
-    <img src="https://img.shields.io/github/followers/vivekkumarm09?label=Follow&style=for-the-badge&color=00d4ff&logo=github" />
-  </a>
-</p>
-
 </div>
 
 ---
 
-<!-- About Me Section with 3D box feel -->
+<!-- ★ FEATURED PROJECTS — AGENTIC & DOCS ★ -->
+
 <div align="center">
-<h2>
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"/>
-  &nbsp;
-  <span style="background: linear-gradient(90deg, #00d4ff, #a855f7); -webkit-background-clip: text;">About Me</span>
-</h2>
+
+## 🔥 FLAGSHIP PROJECTS
+
+<sub>Agentic AI · Document Intelligence · Highlighted Work</sub>
+
 </div>
+
+<!-- PROJECT 1: AGENTIC AI -->
+<table>
+<tr>
+<td width="60%">
+
+### 🤖 `[01]` Agentic AI Data Science System
+
+> *Autonomous multi-step reasoning pipeline that plans, executes, reflects, and adapts — no human in the loop.*
 
 ```python
-class VivekKumarMishra:
+class AgenticPipeline:
     def __init__(self):
-        self.name        = "Vivek Kumar Mishra"
-        self.role        = "Data Science Engineer"
-        self.location    = "India 🇮🇳"
-        self.linkedin    = "vivek-mishra-2619542a2"
-        self.languages   = ["Python", "SQL", "R"]
-        self.passion     = ["Machine Learning", "Deep Learning", "NLP", "Computer Vision"]
-        self.currently   = "Building AI-powered solutions & exploring LLMs"
-        self.fun_fact    = "I believe every dataset has a story waiting to be told 📖"
+        self.planner   = TaskDecomposer()
+        self.executor  = ToolCallingAgent()
+        self.reflector = SelfCritique()
+        self.memory    = VectorStore()
 
-    def say_hi(self):
-        print("Thanks for visiting! Let's connect and build something amazing together 🚀")
-
-me = VivekKumarMishra()
-me.say_hi()
+    def run(self, goal: str):
+        plan   = self.planner.decompose(goal)
+        result = self.executor.act(plan)
+        return self.reflector.iterate(result)
 ```
 
----
+**What it does:**
+- 🧠 Decomposes complex data goals into sub-tasks autonomously
+- 🔁 Iterative self-refinement loop with critique-and-improve
+- 🛠️ Tool-using agent: search, code, analyze, visualize
+- 📊 End-to-end: raw input → final insight, zero human steps
 
-<!-- Stats Section - 3 Column Layout -->
-<div align="center">
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![LLM](https://img.shields.io/badge/LLM-FF6600?style=flat-square&logo=openai&logoColor=white)
+![VectorDB](https://img.shields.io/badge/VectorDB-7B2FBE?style=flat-square&logo=pinecone&logoColor=white)
 
-<h2>⚡ GitHub Analytics</h2>
+</td>
+<td width="40%" align="center">
 
-<table>
-  <tr>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=vivekkumarm09&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=a855f7&text_color=c9d1d9&ring_color=00d4ff" width="100%" />
-    </td>
-    <td>
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=vivekkumarm09&theme=tokyonight&hide_border=true&background=0d1117&ring=00d4ff&fire=a855f7&currStreakLabel=00d4ff&sideLabels=a0aec0&dates=a0aec0" width="100%" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vivekkumarm09&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=c9d1d9&langs_count=8" />
-    </td>
-  </tr>
-</table>
+```
+┌─────────────────────────┐
+│   AGENTIC ARCHITECTURE  │
+│                         │
+│  ┌─────────────────┐    │
+│  │   USER GOAL     │    │
+│  └────────┬────────┘    │
+│           ▼             │
+│  ┌─────────────────┐    │
+│  │  TASK PLANNER   │    │
+│  │  (Decompose)    │    │
+│  └────────┬────────┘    │
+│           ▼             │
+│  ┌─────────────────┐    │
+│  │  TOOL EXECUTOR  │◄─┐ │
+│  │  (Act & Fetch)  │  │ │
+│  └────────┬────────┘  │ │
+│           ▼           │ │
+│  ┌─────────────────┐  │ │
+│  │  SELF-CRITIQUE  │──┘ │
+│  │  (Reflect+Fix)  │    │
+│  └────────┬────────┘    │
+│           ▼             │
+│  ┌─────────────────┐    │
+│  │  FINAL OUTPUT   │    │
+│  └─────────────────┘    │
+└─────────────────────────┘
+```
 
-</div>
+[![View Project](https://img.shields.io/badge/🚀%20VIEW%20PROJECT-00f5ff?style=for-the-badge&logoColor=black)](https://github.com/vivekkumarm09/data-science-project)
 
----
-
-<!-- Tech Stack - Animated Pills -->
-<div align="center">
-<h2>🛠️ Tech Arsenal</h2>
-
-**Languages & Core**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-
-**Machine Learning & AI**
-
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-
-**Data & Visualization**
-
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-4EACD6?style=for-the-badge&logo=python&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
-
-**Tools & Platforms**
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black)
-![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)
-
-</div>
-
----
-
-<!-- Featured Projects -->
-<div align="center">
-<h2>🚀 Featured Projects</h2>
-</div>
-
-<table>
-  <tr>
-    <td width="50%">
-      <h3 align="center">🏥 Chest X-Ray Medical Diagnosis</h3>
-      <div align="center">
-        <a href="https://github.com/vivekkumarm09/Chest-X-Ray-Medical-Diagnosis-with-Deep-Learning-main">
-          <img src="https://img.shields.io/badge/VIEW%20PROJECT-00d4ff?style=for-the-badge&logo=github&logoColor=black"/>
-        </a>
-        <p><strong>Deep Learning · Computer Vision · Medical AI</strong></p>
-        <p>AI-powered chest X-ray analysis using deep learning to detect and diagnose pneumonia and other pulmonary conditions with high clinical accuracy.</p>
-        <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
-        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white"/>
-      </div>
-    </td>
-    <td width="50%">
-      <h3 align="center">✈️ Airlines Price Prediction</h3>
-      <div align="center">
-        <a href="https://github.com/vivekkumarm09/airlines-price-prediction">
-          <img src="https://img.shields.io/badge/VIEW%20PROJECT-a855f7?style=for-the-badge&logo=github&logoColor=white"/>
-        </a>
-        <p><strong>Machine Learning · Regression · Feature Engineering</strong></p>
-        <p>Predictive ML model for airline ticket pricing using advanced feature engineering and ensemble methods to achieve high-accuracy fare forecasts.</p>
-        <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3 align="center">💬 Sentiment Analysis</h3>
-      <div align="center">
-        <a href="https://github.com/vivekkumarm09/sentiment-analysis-project">
-          <img src="https://img.shields.io/badge/VIEW%20PROJECT-22c55e?style=for-the-badge&logo=github&logoColor=white"/>
-        </a>
-        <p><strong>NLP · Text Mining · Classification</strong></p>
-        <p>End-to-end NLP pipeline for sentiment classification using modern text processing techniques and transformer-based models for opinion mining.</p>
-        <img src="https://img.shields.io/badge/NLTK-3776AB?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black"/>
-        <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
-      </div>
-    </td>
-    <td width="50%">
-      <h3 align="center">📊 Data Visualization Mastery</h3>
-      <div align="center">
-        <a href="https://github.com/vivekkumarm09/matplotlib-and-seaborn">
-          <img src="https://img.shields.io/badge/VIEW%20PROJECT-f59e0b?style=for-the-badge&logo=github&logoColor=black"/>
-        </a>
-        <p><strong>Data Visualization · EDA · Storytelling</strong></p>
-        <p>Comprehensive collection of advanced visualizations using Matplotlib and Seaborn — from statistical plots to stunning custom dashboards.</p>
-        <img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Seaborn-4EACD6?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white"/>
-      </div>
-    </td>
-  </tr>
+</td>
+</tr>
 </table>
 
 ---
 
-<!-- Activity Graph -->
+<!-- PROJECT 2: DOCUMENT INTELLIGENCE -->
+<table>
+<tr>
+<td width="40%" align="center">
+
+```
+┌───────────────────────────┐
+│   DOCUMENT PIPELINE       │
+│                           │
+│  📄 PDF / Scan / Image    │
+│           │               │
+│           ▼               │
+│  ┌────────────────┐       │
+│  │  OCR + PARSER  │       │
+│  └───────┬────────┘       │
+│          ▼                │
+│  ┌────────────────┐       │
+│  │ ENTITY EXTRACT │       │
+│  │ NER · Dates    │       │
+│  │ Tables · Keys  │       │
+│  └───────┬────────┘       │
+│          ▼                │
+│  ┌────────────────┐       │
+│  │  CLASSIFIER    │       │
+│  │  & SUMMARIZER  │       │
+│  └───────┬────────┘       │
+│          ▼                │
+│  ✅ Structured JSON Out   │
+└───────────────────────────┘
+```
+
+[![View Project](https://img.shields.io/badge/🚀%20VIEW%20PROJECT-a855f7?style=for-the-badge)](https://github.com/vivekkumarm09/data-science-project)
+
+</td>
+<td width="60%">
+
+### 📄 `[02]` Document Intelligence & Information Extraction
+
+> *End-to-end pipeline to parse, understand, and extract structured knowledge from unstructured documents.*
+
+```python
+class DocumentIntelligence:
+    def process(self, doc_path: str) -> dict:
+        raw_text = self.ocr_engine.extract(doc_path)
+        entities = self.ner_model.predict(raw_text)
+        tables   = self.table_extractor.parse(raw_text)
+        summary  = self.summarizer.run(raw_text)
+        return {
+            "entities": entities,
+            "tables":   tables,
+            "summary":  summary,
+            "metadata": self.classify(doc_path)
+        }
+```
+
+**Capabilities:**
+- 📑 Multi-format: PDF, scanned docs, images, reports
+- 🔍 Named Entity Recognition — names, dates, amounts
+- 📊 Table & structured data extraction from unstructured text
+- 🏷️ Document classification + abstractive summarization
+- 📤 Output: clean, queryable JSON / structured schema
+
+![PyMuPDF](https://img.shields.io/badge/PyMuPDF-FF5733?style=flat-square&logo=python&logoColor=white)
+![Transformers](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=flat-square&logo=spacy&logoColor=white)
+![OCR](https://img.shields.io/badge/Tesseract-4B8BBE?style=flat-square&logo=python&logoColor=white)
+
+</td>
+</tr>
+</table>
+
+---
+
+<!-- OTHER PROJECTS GRID -->
 <div align="center">
 
-<h2>📈 Contribution Activity</h2>
+## 🚀 MORE PROJECTS
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=vivekkumarm09&bg_color=0d1117&color=00d4ff&line=a855f7&point=ffffff&area=true&area_color=00d4ff&hide_border=true" width="100%"/>
+</div>
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🏥 Chest X-Ray Medical Diagnosis AI
+> Deep learning CNN detecting pneumonia & pulmonary conditions with clinical-grade accuracy.
+
+```
+Input: X-Ray Image (256×256)
+  └─► ResNet50 Backbone (ImageNet pretrained)
+       └─► Custom Classification Head
+            └─► Pathology Probability Map ✅
+```
+![TF](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+
+[![View](https://img.shields.io/badge/→%20VIEW%20REPO-22c55e?style=flat-square)](https://github.com/vivekkumarm09/Chest-X-Ray-Medical-Diagnosis-with-Deep-Learning-main)
+
+</td>
+<td width="50%">
+
+#### 💬 NLP Sentiment Analysis Engine
+> Production-grade text classification — VADER, TF-IDF, and transformer-based opinion mining.
+
+```
+Raw Text → Tokenize → Embedding
+  └─► Bi-LSTM / DistilBERT
+       └─► Positive / Negative / Neutral
+            └─► Confidence Score ✅
+```
+![NLTK](https://img.shields.io/badge/NLTK-3776AB?style=flat-square&logo=python&logoColor=white)
+![HF](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![SkLearn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+
+[![View](https://img.shields.io/badge/→%20VIEW%20REPO-f59e0b?style=flat-square)](https://github.com/vivekkumarm09/sentiment-analysis-project)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### ✈️ Airlines Price Prediction
+> Ensemble ML for real-time airline fare forecasting. Feature-engineered from 10K+ flight records.
+
+```
+Features: Route · Season · Airline · Stops
+  └─► XGBoost + Random Forest Ensemble
+       └─► RMSE Optimized · R²: 0.91+ ✅
+```
+![XGB](https://img.shields.io/badge/XGBoost-337AB7?style=flat-square&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+
+[![View](https://img.shields.io/badge/→%20VIEW%20REPO-0ea5e9?style=flat-square)](https://github.com/vivekkumarm09/airlines-price-prediction)
+
+</td>
+<td width="50%">
+
+#### 🌾 Agricultural Production Optimization
+> AI-driven crop recommendation using soil, climate & geospatial data for precision farming.
+
+```
+Inputs: N · P · K · pH · Rainfall · Temp
+  └─► Decision Tree + SVM Classifier
+       └─► Optimal Crop Recommendation 🌱
+```
+![SKLearn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-4EACD6?style=flat-square&logo=python&logoColor=white)
+
+[![View](https://img.shields.io/badge/→%20VIEW%20REPO-16a34a?style=flat-square)](https://github.com/vivekkumarm09/data-science-project)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🏠 Bangalore House Price Regression
+> Full regression pipeline with advanced feature engineering for real estate pricing.
+
+```
+EDA → Outlier Removal → One-Hot Encoding
+  └─► Linear Reg + Ridge + Lasso
+       └─► GridSearchCV → Best Model 🏆
+```
+![SKLearn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=python&logoColor=white)
+
+[![View](https://img.shields.io/badge/→%20VIEW%20REPO-db2777?style=flat-square)](https://github.com/vivekkumarm09/ITECH_INTERSHIP_TASK)
+
+</td>
+<td width="50%">
+
+#### 💓 Heart Disease Classification
+> Binary cardiac risk classification with SHAP explainability for clinical interpretability.
+
+```
+Features: Age · BP · Cholesterol · ECG
+  └─► Logistic Reg + Random Forest
+       └─► SHAP Feature Importance 🫀
+```
+![SKLearn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![SHAP](https://img.shields.io/badge/SHAP-FF6347?style=flat-square&logo=python&logoColor=white)
+
+[![View](https://img.shields.io/badge/→%20VIEW%20REPO-ef4444?style=flat-square)](https://github.com/vivekkumarm09/ITECH_INTERSHIP_TASK)
+
+</td>
+</tr>
+</table>
+
+---
+
+<!-- GITHUB ANALYTICS -->
+<div align="center">
+
+## 📊 GitHub Intelligence Dashboard
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=vivekkumarm09&show_icons=true&count_private=true&theme=transparent&hide_border=true&bg_color=0d1117&title_color=00f5ff&icon_color=a855f7&text_color=c9d1d9&ring_color=00f5ff&border_radius=12" />
+<img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=vivekkumarm09&theme=transparent&hide_border=true&background=0d1117&ring=00f5ff&fire=a855f7&currStreakLabel=00f5ff&sideLabels=7dd3fc&dates=6b7280&border_radius=12" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=vivekkumarm09&bg_color=0d1117&color=00f5ff&line=a855f7&point=ffffff&area=true&area_color=00f5ff20&hide_border=true&radius=8" width="95%" />
 
 </div>
 
 ---
 
-<!-- Skills Progress Bars -->
+<!-- TECH STACK -->
 <div align="center">
-<h2>🧠 Core Competencies</h2>
+
+## ⚙️ Full Stack of Capabilities
+
+</div>
+
+<table align="center">
+<tr>
+<td align="center" width="130">
+
+**Core**<br/>
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/-SQL-CC2927?style=flat-square&logo=postgresql&logoColor=white)
+![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+
+</td>
+<td align="center" width="160">
+
+**ML / AI**<br/>
+![TF](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![Keras](https://img.shields.io/badge/-Keras-D00000?style=flat-square&logo=keras&logoColor=white)
+![SkLearn](https://img.shields.io/badge/-Sklearn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+
+</td>
+<td align="center" width="160">
+
+**NLP / LLM**<br/>
+![HuggingFace](https://img.shields.io/badge/-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![spaCy](https://img.shields.io/badge/-spaCy-09A3D5?style=flat-square&logo=spacy&logoColor=white)
+![NLTK](https://img.shields.io/badge/-NLTK-3776AB?style=flat-square&logo=python&logoColor=white)
+![LangChain](https://img.shields.io/badge/-LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+
+</td>
+<td align="center" width="160">
+
+**Data & Viz**<br/>
+![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=flat-square&logo=python&logoColor=white)
+![Plotly](https://img.shields.io/badge/-Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
+
+</td>
+<td align="center" width="130">
+
+**Tools**<br/>
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+![Colab](https://img.shields.io/badge/-Colab-F9AB00?style=flat-square&logo=googlecolab&logoColor=black)
+![Kaggle](https://img.shields.io/badge/-Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white)
+
+</td>
+</tr>
+</table>
+
+---
+
+<!-- EXPERTISE SKILL MATRIX -->
+<div align="center">
+
+## 🧬 Expertise Matrix
+
 </div>
 
 ```
-Machine Learning        ████████████████████  95%
-Deep Learning           ███████████████████░  90%
-Data Visualization      ████████████████████  95%
-Natural Language Proc.  ████████████████░░░░  80%
-Computer Vision         ███████████████░░░░░  75%
-Feature Engineering     ████████████████████  95%
-Statistical Analysis    ██████████████████░░  88%
-Model Deployment        ████████████░░░░░░░░  60%
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         VIVEK'S SKILL RADAR                                 ║
+╠══════════════════╦══════════════════════════════════════════════╦═══════════╣
+║  DOMAIN          ║  PROFICIENCY                                 ║  LEVEL    ║
+╠══════════════════╬══════════════════════════════════════════════╬═══════════╣
+║  Agentic AI      ║  ██████████████████████  ░░░░░░░░           ║  Advanced ║
+║  Document AI     ║  ████████████████████████░░░░░░░            ║  Advanced ║
+║  Deep Learning   ║  █████████████████████   ░░░░░░░░           ║  Advanced ║
+║  Machine Learn.  ║  ████████████████████████████░░             ║  Expert   ║
+║  NLP / LLMs      ║  █████████████████████░░░░░░░░░             ║  Advanced ║
+║  Computer Vision ║  ██████████████████████  ░░░░░░░░           ║  Advanced ║
+║  Data Analysis   ║  ████████████████████████████████           ║  Expert   ║
+║  Visualization   ║  ████████████████████████████████           ║  Expert   ║
+║  Feature Engg.   ║  ████████████████████████████░░░            ║  Expert   ║
+║  SQL / Databases ║  █████████████████████░░░░░░░░░             ║  Advanced ║
+╚══════════════════╩══════════════════════════════════════════════╩═══════════╝
 ```
 
 ---
 
-<!-- Trophies -->
+<!-- TROPHIES -->
 <div align="center">
 
-<h2>🏆 GitHub Trophies</h2>
+## 🏆 Achievement Vault
 
-<img src="https://github-profile-trophy.vercel.app/?username=vivekkumarm09&theme=tokyonight&no-frame=true&no-bg=true&column=6&margin-w=8" />
+<img src="https://github-profile-trophy.vercel.app/?username=vivekkumarm09&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=6" />
 
 </div>
 
 ---
 
-<!-- 3D Contribution Snake -->
+<!-- CONTRIBUTION SNAKE -->
 <div align="center">
 
-<h2>🐍 Contribution Snake</h2>
+## 🐍 Contribution Matrix
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" />
-  <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%" />
 </picture>
 
 </div>
 
 ---
 
-<!-- Random Dev Quote -->
+<!-- ABOUT ME — CODE BLOCK -->
 <div align="center">
 
-<h2>💡 Dev Philosophy</h2>
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+## 👨‍💻 System Specs
 
 </div>
 
+```json
+{
+  "name"        : "Vivek Kumar Mishra",
+  "alias"       : "vivekkumarm09",
+  "role"        : "Data Science Engineer",
+  "location"    : "India 🇮🇳",
+  "linkedin"    : "vivek-mishra-2619542a2",
+  "core_focus"  : [
+    "Agentic AI — autonomous multi-step reasoning pipelines",
+    "Document Intelligence — OCR, NER, information extraction",
+    "Deep Learning — CNN, RNN, Transformers",
+    "Medical AI — chest X-ray diagnosis, health analytics",
+    "NLP — sentiment analysis, text classification",
+    "Agricultural AI — crop optimization, precision farming"
+  ],
+  "currently_learning" : ["LLM fine-tuning", "RAG systems", "MLOps pipelines"],
+  "philosophy"  : "Every dataset holds a truth. My job is to find it.",
+  "collaboration": "Open to impactful AI/ML projects 🤝",
+  "fun_fact"    : "I taught a machine to read X-rays before my morning coffee ☕"
+}
+```
+
 ---
 
-<!-- Connect Section -->
+<!-- FOOTER -->
 <div align="center">
 
-<h2>🤝 Let's Connect & Collaborate</h2>
-
-<p>I'm always open to exciting Data Science opportunities, collaborations, and conversations!</p>
+## 🌐 Let's Build Something Intelligent Together
 
 <a href="https://www.linkedin.com/in/vivek-mishra-2619542a2">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5" />
+  <img src="https://img.shields.io/badge/LinkedIn-Vivek%20Kumar%20Mishra-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 &nbsp;
 <a href="https://github.com/vivekkumarm09">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-vivekkumarm09-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 &nbsp;
 <a href="mailto:vivekkumarm09@gmail.com">
-  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-&nbsp;
-<a href="https://kaggle.com">
-  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" />
+  <img src="https://img.shields.io/badge/Email-Reach%20Out-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 
 <br/><br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:16213e,50:1a1a2e,100:0d1117&height=120&section=footer&text=Thanks%20for%20visiting!%20⭐%20Star%20my%20repos%20if%20you%20find%20them%20useful!&fontSize=14&fontColor=a0aec0&animation=fadeIn&fontAlignY=65" width="100%"/>
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" width="70%"/>
+
+<br/><br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050b2e,50:102a6b,100:050b2e&height=120&section=footer&text=⭐%20Star%20my%20repos%20if%20they%20helped%20you!&fontSize=16&fontColor=7dd3fc&animation=fadeIn&fontAlignY=65" width="100%" />
 
 </div>
+
+<!-- Made with passion by Vivek Kumar Mishra | "Intelligence is not given. It is engineered." -->
