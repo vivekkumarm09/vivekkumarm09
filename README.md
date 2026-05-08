@@ -1,508 +1,417 @@
-<!-- ============================================================
-     VIVEK KUMAR MISHRA — GITHUB PROFILE README
-     Industry-Level | Animated | Unique | 3D Design
-     ============================================================ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;700&display=swap');
 
-<div align="center">
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --c1:#00f5ff;--c2:#7c3aed;--c3:#06b6d4;--c4:#8b5cf6;
+    --bg:#020617;--bg2:#0a0f1e;--bg3:#0d1526;
+    --card:#0f172a;--card2:#111827;
+    --border:rgba(0,245,255,0.15);
+    --glow:0 0 20px rgba(0,245,255,0.3);
+  }
+  body{background:var(--bg);color:#e2e8f0;font-family:'Space Grotesk',sans-serif;overflow-x:hidden}
 
-<img src="https://capsule-render.vercel.app/api?type=venom&height=280&text=Vivek%20Kumar%20Mishra&fontSize=55&color=0:050b2e,25:0d1b4b,50:102a6b,75:0d1b4b,100:050b2e&fontColor=00f5ff&animation=fadeIn&stroke=00f5ff&strokeWidth=2&desc=⚡%20Data%20Science%20Engineer%20%7C%20AI%20%7C%20ML%20%7C%20Agentic%20Systems&descSize=17&descAlignY=68&descColor=7dd3fc" width="100%" />
+  /* PARTICLE CANVAS */
+  #particles{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0.4}
 
+  /* HERO */
+  .hero{position:relative;z-index:1;min-height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 24px 32px;overflow:hidden;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(124,58,237,0.18) 0%,transparent 70%)}
+  .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,var(--bg) 100%);z-index:0}
+  .grid-overlay{position:absolute;inset:0;background-image:linear-gradient(rgba(0,245,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,245,255,0.04) 1px,transparent 1px);background-size:40px 40px;z-index:0}
+  .hero-inner{position:relative;z-index:1;text-align:center}
+
+  /* GLITCH NAME */
+  .glitch{font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,5vw,56px);font-weight:700;letter-spacing:-1px;color:#fff;position:relative;display:inline-block}
+  .glitch::before,.glitch::after{content:attr(data-text);position:absolute;left:0;top:0;width:100%;height:100%}
+  .glitch::before{color:var(--c1);animation:glitch1 3s infinite;clip-path:polygon(0 0,100% 0,100% 35%,0 35%);transform:translateX(-2px)}
+  .glitch::after{color:var(--c2);animation:glitch2 3s infinite;clip-path:polygon(0 65%,100% 65%,100% 100%,0 100%);transform:translateX(2px)}
+  @keyframes glitch1{0%,90%,100%{transform:translateX(-2px)}92%{transform:translateX(2px) skewX(1deg)}94%{transform:translateX(-3px)}}
+  @keyframes glitch2{0%,90%,100%{transform:translateX(2px)}93%{transform:translateX(-2px) skewX(-1deg)}95%{transform:translateX(3px)}}
+
+  .role-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,245,255,0.08);border:1px solid rgba(0,245,255,0.25);border-radius:100px;padding:6px 18px;font-size:13px;color:var(--c1);margin:16px 0;letter-spacing:0.5px;font-family:'JetBrains Mono',monospace}
+  .role-badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--c1);animation:pulse 1.5s infinite;flex-shrink:0}
+  @keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,245,255,0.4)}50%{opacity:0.7;box-shadow:0 0 0 6px rgba(0,245,255,0)}}
+
+  .tagline{font-size:clamp(13px,2vw,16px);color:#94a3b8;max-width:560px;line-height:1.7;margin:0 auto 24px}
+
+  .badge-row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:8px}
+  .badge{display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:6px;font-size:11px;font-weight:500;letter-spacing:0.3px;font-family:'JetBrains Mono',monospace;text-transform:uppercase}
+  .badge-cyan{background:rgba(0,245,255,0.08);border:1px solid rgba(0,245,255,0.3);color:var(--c1)}
+  .badge-purple{background:rgba(124,58,237,0.12);border:1px solid rgba(124,58,237,0.4);color:#a78bfa}
+  .badge-green{background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.3);color:#34d399}
+
+  /* SECTIONS */
+  .section{position:relative;z-index:1;padding:32px 20px;max-width:860px;margin:0 auto}
+  .section-label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--c1);margin-bottom:8px;opacity:0.7}
+  .section-title{font-size:22px;font-weight:600;color:#f1f5f9;margin-bottom:4px}
+
+  /* DIVIDER */
+  .divider{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);margin:8px 20px}
+
+  /* FLAGSHIP CARDS */
+  .flagship{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
+  @media(max-width:600px){.flagship{grid-template-columns:1fr}}
+  .flag-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;position:relative;overflow:hidden;transition:transform 0.3s,border-color 0.3s,box-shadow 0.3s;cursor:default}
+  .flag-card:hover{transform:translateY(-4px) scale(1.01);border-color:rgba(0,245,255,0.4);box-shadow:0 0 30px rgba(0,245,255,0.1),0 20px 40px rgba(0,0,0,0.4)}
+  .flag-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--c2),var(--c1));opacity:0.8}
+  .flag-card.purple::before{background:linear-gradient(90deg,var(--c4),#c084fc)}
+  .card-num{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--c1);letter-spacing:2px;margin-bottom:8px;opacity:0.6}
+  .card-title{font-size:16px;font-weight:600;color:#f1f5f9;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+  .card-desc{font-size:13px;color:#64748b;line-height:1.6;margin-bottom:14px}
+  .code-snippet{background:#020917;border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:12px;font-family:'JetBrains Mono',monospace;font-size:10.5px;line-height:1.6;color:#94a3b8;margin-bottom:14px;overflow:hidden}
+  .kw{color:#c084fc}.fn{color:var(--c1)}.str{color:#86efac}.cm{color:#475569}.v{color:#fb923c}
+  .tag-row{display:flex;flex-wrap:wrap;gap:5px}
+  .tag{font-size:10px;padding:3px 8px;border-radius:4px;font-family:'JetBrains Mono',monospace;font-weight:500;text-transform:uppercase;letter-spacing:0.3px}
+  .t-py{background:rgba(59,130,246,0.12);color:#60a5fa;border:1px solid rgba(59,130,246,0.2)}
+  .t-lc{background:rgba(16,185,129,0.1);color:#34d399;border:1px solid rgba(16,185,129,0.2)}
+  .t-hf{background:rgba(251,191,36,0.1);color:#fbbf24;border:1px solid rgba(251,191,36,0.2)}
+  .t-tf{background:rgba(239,68,68,0.1);color:#f87171;border:1px solid rgba(239,68,68,0.2)}
+  .t-sp{background:rgba(99,102,241,0.1);color:#818cf8;border:1px solid rgba(99,102,241,0.2)}
+  .t-cv{background:rgba(20,184,166,0.1);color:#2dd4bf;border:1px solid rgba(20,184,166,0.2)}
+
+  /* ARCH DIAGRAM */
+  .arch{background:#020917;border:1px solid rgba(255,255,255,0.05);border-radius:10px;padding:14px;margin-bottom:14px;font-family:'JetBrains Mono',monospace;font-size:10px;line-height:1.7;color:#475569}
+  .arch .node{color:var(--c1)}.arch .arrow{color:#334155}.arch .label{color:#94a3b8}
+
+  /* STATS GRID */
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}
+  @media(max-width:600px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+  .stat-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;text-align:center;transition:border-color 0.3s,transform 0.3s}
+  .stat-card:hover{border-color:rgba(0,245,255,0.35);transform:translateY(-2px)}
+  .stat-num{font-size:28px;font-weight:700;color:var(--c1);font-family:'JetBrains Mono',monospace;line-height:1}
+  .stat-label{font-size:11px;color:#475569;margin-top:4px;letter-spacing:0.5px;text-transform:uppercase}
+
+  /* SKILL MATRIX */
+  .skill-matrix{margin-top:20px;display:grid;gap:8px}
+  .skill-row{display:grid;grid-template-columns:140px 1fr 50px;align-items:center;gap:12px}
+  .skill-name{font-size:12px;color:#94a3b8;font-family:'JetBrains Mono',monospace}
+  .skill-bar-bg{height:5px;background:rgba(255,255,255,0.05);border-radius:100px;overflow:hidden}
+  .skill-bar{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--c2),var(--c1));width:0%;transition:width 1.2s cubic-bezier(0.16,1,0.3,1)}
+  .skill-pct{font-size:11px;color:#475569;font-family:'JetBrains Mono',monospace;text-align:right}
+
+  /* PROJECT GRID */
+  .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+  @media(max-width:600px){.proj-grid{grid-template-columns:1fr}}
+  .proj-card{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:18px;transition:border-color 0.3s,transform 0.3s}
+  .proj-card:hover{border-color:rgba(0,245,255,0.25);transform:translateY(-3px)}
+  .proj-icon{font-size:22px;margin-bottom:8px}
+  .proj-title{font-size:14px;font-weight:600;color:#e2e8f0;margin-bottom:4px}
+  .proj-desc{font-size:12px;color:#475569;line-height:1.5;margin-bottom:10px}
+  .proj-flow{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#334155;background:#020917;border-radius:6px;padding:8px;margin-bottom:10px;line-height:1.6}
+  .proj-flow .h{color:#60a5fa}.proj-flow .g{color:#34d399}
+
+  /* TECH CLOUD */
+  .tech-cloud{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .tech-pill{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:var(--card);border:1px solid rgba(255,255,255,0.07);border-radius:8px;font-size:12px;color:#94a3b8;transition:border-color 0.3s,color 0.3s,transform 0.2s;cursor:default}
+  .tech-pill:hover{border-color:var(--c1);color:var(--c1);transform:translateY(-2px)}
+  .tech-dot{width:6px;height:6px;border-radius:50%}
+
+  /* CONNECT */
+  .connect-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;justify-content:center}
+  .connect-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;font-size:13px;font-weight:500;text-decoration:none;transition:all 0.25s;border:1px solid}
+  .btn-linkedin{background:rgba(10,102,194,0.12);border-color:rgba(10,102,194,0.35);color:#60a5fa}
+  .btn-linkedin:hover{background:rgba(10,102,194,0.22);border-color:rgba(10,102,194,0.6);transform:translateY(-2px)}
+  .btn-github{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12);color:#e2e8f0}
+  .btn-github:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.25);transform:translateY(-2px)}
+  .btn-email{background:rgba(239,68,68,0.08);border-color:rgba(239,68,68,0.25);color:#f87171}
+  .btn-email:hover{background:rgba(239,68,68,0.15);transform:translateY(-2px)}
+
+  /* FOOTER */
+  .footer{text-align:center;padding:32px 20px 40px;position:relative;z-index:1}
+  .footer-line{height:1px;background:linear-gradient(90deg,transparent,rgba(0,245,255,0.2),transparent);margin-bottom:24px}
+  .footer-quote{font-family:'JetBrains Mono',monospace;font-size:12px;color:#334155;font-style:italic}
+  .footer-sig{font-size:11px;color:#1e293b;margin-top:8px;letter-spacing:1px;text-transform:uppercase}
+
+  /* ANIMATE IN */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.6s ease,transform 0.6s ease}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+
+  /* NEURAL NET SVG */
+  .neural-wrap{display:flex;justify-content:center;margin:20px 0 4px}
+</style>
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="grid-overlay"></div>
+  <div class="hero-inner">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#475569;letter-spacing:2px;margin-bottom:16px;text-transform:uppercase">
+      &lt; DATA SCIENCE ENGINEER /&gt;
+    </div>
+    <div class="glitch" data-text="Vivek Kumar Mishra">Vivek Kumar Mishra</div>
+    <div style="margin-top:16px">
+      <span class="role-badge">Available for AI/ML Opportunities</span>
+    </div>
+    <p class="tagline">Building autonomous AI systems that think, learn, and act.<br>From raw data to real-world intelligence.</p>
+    <div class="badge-row">
+      <span class="badge badge-cyan">⚡ Agentic AI</span>
+      <span class="badge badge-purple">📄 Document Intelligence</span>
+      <span class="badge badge-cyan">🧠 Deep Learning</span>
+      <span class="badge badge-green">🏥 Medical AI</span>
+      <span class="badge badge-purple">💬 NLP / LLMs</span>
+      <span class="badge badge-cyan">🌾 AgriTech AI</span>
+    </div>
+  </div>
 </div>
 
-<!-- LIVE TERMINAL PROMPT -->
-<div align="center">
+<div class="divider"></div>
 
-```bash
-$ whoami
-> vivek_kumar_mishra :: data_science_engineer
-
-$ cat specializations.txt
-> Agentic AI Systems  |  Document Intelligence  |  Deep Learning
-> Medical Computer Vision  |  NLP & Sentiment Analysis  |  MLOps
-
-$ uptime --passion
-> Building intelligent systems that think, learn, and act  ∞
-```
-
+<!-- STATS -->
+<div class="section reveal">
+  <div class="section-label">// metrics</div>
+  <div class="section-title">By the Numbers</div>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-num" id="s1">0</div>
+      <div class="stat-label">Projects</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="s2">0</div>
+      <div class="stat-label">Repos</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="s3">0</div>
+      <div class="stat-label">ML Models</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="s4">0</div>
+      <div class="stat-label">Domains</div>
+    </div>
+  </div>
 </div>
 
-<!-- ANIMATED TYPING -->
-<div align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2500&pause=600&color=00F5FF&center=true&vCenter=true&width=700&lines=%F0%9F%A4%96+Agentic+AI+%7C+Autonomous+Reasoning+Systems;%F0%9F%93%84+Document+Intelligence+%26+Information+Extraction;%F0%9F%A7%A0+Deep+Learning+%7C+TensorFlow+%7C+PyTorch;%F0%9F%8F%A5+Medical+AI+%7C+Chest+X-Ray+Diagnosis+with+CNN;%F0%9F%9A%80+Turning+Raw+Data+into+Real-World+Impact;%F0%9F%94%AC+Agricultural+AI+%7C+Precision+Forecasting" alt="typing" />
+<div class="divider"></div>
+
+<!-- FLAGSHIP -->
+<div class="section reveal">
+  <div class="section-label">// flagship [ pinned ]</div>
+  <div class="section-title">Agentic AI &amp; Document Intelligence</div>
+  <div class="flagship">
+
+    <!-- CARD 1: AGENTIC -->
+    <div class="flag-card">
+      <div class="card-num">01 &mdash; AGENTIC AI</div>
+      <div class="card-title">🤖 Autonomous Reasoning Pipeline</div>
+      <div class="card-desc">Multi-step AI agent that plans, acts, self-critiques, and iterates — zero human in the loop.</div>
+      <div class="code-snippet"><span class="kw">class</span> <span class="fn">AgenticPipeline</span>:<br>&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">run</span>(<span class="v">self</span>, goal):<br>&nbsp;&nbsp;&nbsp;&nbsp;plan = <span class="v">self</span>.planner.decompose(goal)<br>&nbsp;&nbsp;&nbsp;&nbsp;act&nbsp; = <span class="v">self</span>.executor.run(plan)<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> <span class="v">self</span>.reflector.iterate(act)<br><span class="cm"># ∞ loop until confident</span></div>
+      <div class="arch"><span class="label">GOAL</span> <span class="arrow">──►</span> <span class="node">PLANNER</span> <span class="arrow">──►</span> <span class="node">EXECUTOR</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="arrow">│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▲</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="arrow">▼</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="arrow">│</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="node">CRITIC</span>&nbsp;&nbsp;<span class="arrow">──┘</span></div>
+      <div class="tag-row">
+        <span class="tag t-py">Python</span>
+        <span class="tag t-lc">LangChain</span>
+        <span class="tag t-hf">LLM</span>
+        <span class="tag t-sp">VectorDB</span>
+      </div>
+    </div>
+
+    <!-- CARD 2: DOCUMENT -->
+    <div class="flag-card purple">
+      <div class="card-num">02 &mdash; DOCUMENT INTELLIGENCE</div>
+      <div class="card-title">📄 Information Extraction Engine</div>
+      <div class="card-desc">OCR → NER → table extraction → classification → structured JSON. Any document format.</div>
+      <div class="code-snippet"><span class="kw">class</span> <span class="fn">DocIntelligence</span>:<br>&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">process</span>(<span class="v">self</span>, doc) <span class="kw">-&gt;</span> dict:<br>&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp; = <span class="v">self</span>.ocr.extract(doc)<br>&nbsp;&nbsp;&nbsp;&nbsp;ents&nbsp; = <span class="v">self</span>.ner.predict(text)<br>&nbsp;&nbsp;&nbsp;&nbsp;tbls&nbsp; = <span class="v">self</span>.parser.tables(text)<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> {<span class="str">"entities"</span>: ents, <span class="str">"tables"</span>: tbls}</div>
+      <div class="arch"><span class="label">PDF/IMG</span> <span class="arrow">──►</span> <span class="node">OCR</span> <span class="arrow">──►</span> <span class="node">NER</span> <span class="arrow">──►</span> <span class="node">JSON</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="arrow">▼</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="node">CLASSIFY</span>&nbsp;<span class="arrow">+</span>&nbsp;<span class="node">SUMMARIZE</span></div>
+      <div class="tag-row">
+        <span class="tag t-hf">HuggingFace</span>
+        <span class="tag t-sp">spaCy</span>
+        <span class="tag t-py">PyMuPDF</span>
+        <span class="tag t-cv">OCR</span>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<!-- PROFILE BADGES -->
-<div align="center">
-<br/>
+<div class="divider"></div>
 
-[![Profile Views](https://komarev.com/ghpvc/?username=vivekkumarm09&label=PROFILE+VIEWS&color=00f5ff&style=for-the-badge&logo=eye)](https://github.com/vivekkumarm09)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vivek-mishra-2619542a2)
-[![GitHub](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vivekkumarm09)
-[![Open to Work](https://img.shields.io/badge/OPEN%20TO%20WORK-✅-00d26a?style=for-the-badge)](https://www.linkedin.com/in/vivek-mishra-2619542a2)
+<!-- OTHER PROJECTS -->
+<div class="section reveal">
+  <div class="section-label">// projects</div>
+  <div class="section-title">Full Portfolio</div>
+  <div class="proj-grid">
 
-<br/>
+    <div class="proj-card">
+      <div class="proj-icon">🏥</div>
+      <div class="proj-title">Chest X-Ray Medical Diagnosis</div>
+      <div class="proj-desc">CNN detecting pneumonia &amp; pulmonary conditions with clinical-grade accuracy.</div>
+      <div class="proj-flow"><span class="h">Input</span>: X-Ray 256×256<br><span class="h">Model</span>: ResNet50 + Custom Head<br><span class="g">Output</span>: Pathology Map ✓</div>
+      <div class="tag-row"><span class="tag t-tf">TensorFlow</span><span class="tag t-cv">OpenCV</span><span class="tag t-tf">Keras</span></div>
+    </div>
 
+    <div class="proj-card">
+      <div class="proj-icon">💬</div>
+      <div class="proj-title">NLP Sentiment Analysis Engine</div>
+      <div class="proj-desc">Transformer-based opinion mining — VADER, TF-IDF, DistilBERT pipeline.</div>
+      <div class="proj-flow"><span class="h">Input</span>: Raw Text<br><span class="h">Model</span>: Bi-LSTM / DistilBERT<br><span class="g">Output</span>: Sentiment + Score ✓</div>
+      <div class="tag-row"><span class="tag t-hf">HuggingFace</span><span class="tag t-sp">NLTK</span><span class="tag t-py">Sklearn</span></div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-icon">✈️</div>
+      <div class="proj-title">Airlines Price Prediction</div>
+      <div class="proj-desc">XGBoost ensemble ML for real-time fare forecasting. 10K+ flight records, R² 0.91+.</div>
+      <div class="proj-flow"><span class="h">Features</span>: Route, Airline, Season<br><span class="h">Model</span>: XGBoost + RF Ensemble<br><span class="g">R²</span>: 0.91+ Optimized ✓</div>
+      <div class="tag-row"><span class="tag t-py">XGBoost</span><span class="tag t-cv">Pandas</span><span class="tag t-sp">Sklearn</span></div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-icon">🌾</div>
+      <div class="proj-title">Agricultural Optimization Engine</div>
+      <div class="proj-desc">AI-driven crop recommendation using soil, climate &amp; geospatial inputs.</div>
+      <div class="proj-flow"><span class="h">Inputs</span>: N, P, K, pH, Rainfall<br><span class="h">Model</span>: SVM + Decision Tree<br><span class="g">Output</span>: Optimal Crop ✓</div>
+      <div class="tag-row"><span class="tag t-py">Sklearn</span><span class="tag t-sp">Seaborn</span><span class="tag t-lc">EDA</span></div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-icon">🏠</div>
+      <div class="proj-title">Bangalore House Price Regression</div>
+      <div class="proj-desc">Full regression pipeline with GridSearchCV tuning for real estate pricing.</div>
+      <div class="proj-flow"><span class="h">Process</span>: EDA → OHE → Ridge/Lasso<br><span class="h">Tuning</span>: GridSearchCV<br><span class="g">Result</span>: Best Model Selected ✓</div>
+      <div class="tag-row"><span class="tag t-py">Sklearn</span><span class="tag t-cv">Matplotlib</span><span class="tag t-sp">Pandas</span></div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-icon">💓</div>
+      <div class="proj-title">Heart Disease Classification</div>
+      <div class="proj-desc">SHAP-explainable cardiac risk classification — Random Forest + Logistic Reg.</div>
+      <div class="proj-flow"><span class="h">Features</span>: Age, BP, Cholesterol<br><span class="h">Model</span>: RF + SHAP Explainer<br><span class="g">Output</span>: Risk Score + Reason ✓</div>
+      <div class="tag-row"><span class="tag t-tf">SHAP</span><span class="tag t-py">Sklearn</span><span class="tag t-sp">Seaborn</span></div>
+    </div>
+
+  </div>
 </div>
 
----
+<div class="divider"></div>
 
-<!-- ★ FEATURED PROJECTS — AGENTIC & DOCS ★ -->
-
-<div align="center">
-
-## 🔥 FLAGSHIP PROJECTS
-
-<sub>Agentic AI · Document Intelligence · Highlighted Work</sub>
-
+<!-- SKILLS -->
+<div class="section reveal">
+  <div class="section-label">// expertise</div>
+  <div class="section-title">Skill Matrix</div>
+  <div class="skill-matrix" id="skills">
+    <div class="skill-row"><span class="skill-name">Machine Learning</span><div class="skill-bar-bg"><div class="skill-bar" data-w="95"></div></div><span class="skill-pct">95%</span></div>
+    <div class="skill-row"><span class="skill-name">Data Visualization</span><div class="skill-bar-bg"><div class="skill-bar" data-w="95"></div></div><span class="skill-pct">95%</span></div>
+    <div class="skill-row"><span class="skill-name">Deep Learning</span><div class="skill-bar-bg"><div class="skill-bar" data-w="88"></div></div><span class="skill-pct">88%</span></div>
+    <div class="skill-row"><span class="skill-name">Agentic AI</span><div class="skill-bar-bg"><div class="skill-bar" data-w="85"></div></div><span class="skill-pct">85%</span></div>
+    <div class="skill-row"><span class="skill-name">Document AI</span><div class="skill-bar-bg"><div class="skill-bar" data-w="83"></div></div><span class="skill-pct">83%</span></div>
+    <div class="skill-row"><span class="skill-name">NLP / LLMs</span><div class="skill-bar-bg"><div class="skill-bar" data-w="80"></div></div><span class="skill-pct">80%</span></div>
+    <div class="skill-row"><span class="skill-name">Computer Vision</span><div class="skill-bar-bg"><div class="skill-bar" data-w="78"></div></div><span class="skill-pct">78%</span></div>
+    <div class="skill-row"><span class="skill-name">Feature Engineering</span><div class="skill-bar-bg"><div class="skill-bar" data-w="92"></div></div><span class="skill-pct">92%</span></div>
+  </div>
 </div>
 
-<!-- PROJECT 1: AGENTIC AI -->
-<table>
-<tr>
-<td width="60%">
-
-### 🤖 `[01]` Agentic AI Data Science System
-
-> *Autonomous multi-step reasoning pipeline that plans, executes, reflects, and adapts — no human in the loop.*
-
-```python
-class AgenticPipeline:
-    def __init__(self):
-        self.planner   = TaskDecomposer()
-        self.executor  = ToolCallingAgent()
-        self.reflector = SelfCritique()
-        self.memory    = VectorStore()
-
-    def run(self, goal: str):
-        plan   = self.planner.decompose(goal)
-        result = self.executor.act(plan)
-        return self.reflector.iterate(result)
-```
-
-**What it does:**
-- 🧠 Decomposes complex data goals into sub-tasks autonomously
-- 🔁 Iterative self-refinement loop with critique-and-improve
-- 🛠️ Tool-using agent: search, code, analyze, visualize
-- 📊 End-to-end: raw input → final insight, zero human steps
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![LLM](https://img.shields.io/badge/LLM-FF6600?style=flat-square&logo=openai&logoColor=white)
-![VectorDB](https://img.shields.io/badge/VectorDB-7B2FBE?style=flat-square&logo=pinecone&logoColor=white)
-
-</td>
-<td width="40%" align="center">
-
-```
-┌─────────────────────────┐
-│   AGENTIC ARCHITECTURE  │
-│                         │
-│  ┌─────────────────┐    │
-│  │   USER GOAL     │    │
-│  └────────┬────────┘    │
-│           ▼             │
-│  ┌─────────────────┐    │
-│  │  TASK PLANNER   │    │
-│  │  (Decompose)    │    │
-│  └────────┬────────┘    │
-│           ▼             │
-│  ┌─────────────────┐    │
-│  │  TOOL EXECUTOR  │◄─┐ │
-│  │  (Act & Fetch)  │  │ │
-│  └────────┬────────┘  │ │
-│           ▼           │ │
-│  ┌─────────────────┐  │ │
-│  │  SELF-CRITIQUE  │──┘ │
-│  │  (Reflect+Fix)  │    │
-│  └────────┬────────┘    │
-│           ▼             │
-│  ┌─────────────────┐    │
-│  │  FINAL OUTPUT   │    │
-│  └─────────────────┘    │
-└─────────────────────────┘
-```
-
-[![View Project](https://img.shields.io/badge/🚀%20VIEW%20PROJECT-00f5ff?style=for-the-badge&logoColor=black)](https://github.com/vivekkumarm09/data-science-project)
-
-</td>
-</tr>
-</table>
-
----
-
-<!-- PROJECT 2: DOCUMENT INTELLIGENCE -->
-<table>
-<tr>
-<td width="40%" align="center">
-
-```
-┌───────────────────────────┐
-│   DOCUMENT PIPELINE       │
-│                           │
-│  📄 PDF / Scan / Image    │
-│           │               │
-│           ▼               │
-│  ┌────────────────┐       │
-│  │  OCR + PARSER  │       │
-│  └───────┬────────┘       │
-│          ▼                │
-│  ┌────────────────┐       │
-│  │ ENTITY EXTRACT │       │
-│  │ NER · Dates    │       │
-│  │ Tables · Keys  │       │
-│  └───────┬────────┘       │
-│          ▼                │
-│  ┌────────────────┐       │
-│  │  CLASSIFIER    │       │
-│  │  & SUMMARIZER  │       │
-│  └───────┬────────┘       │
-│          ▼                │
-│  ✅ Structured JSON Out   │
-└───────────────────────────┘
-```
-
-[![View Project](https://img.shields.io/badge/🚀%20VIEW%20PROJECT-a855f7?style=for-the-badge)](https://github.com/vivekkumarm09/data-science-project)
-
-</td>
-<td width="60%">
-
-### 📄 `[02]` Document Intelligence & Information Extraction
-
-> *End-to-end pipeline to parse, understand, and extract structured knowledge from unstructured documents.*
-
-```python
-class DocumentIntelligence:
-    def process(self, doc_path: str) -> dict:
-        raw_text = self.ocr_engine.extract(doc_path)
-        entities = self.ner_model.predict(raw_text)
-        tables   = self.table_extractor.parse(raw_text)
-        summary  = self.summarizer.run(raw_text)
-        return {
-            "entities": entities,
-            "tables":   tables,
-            "summary":  summary,
-            "metadata": self.classify(doc_path)
-        }
-```
-
-**Capabilities:**
-- 📑 Multi-format: PDF, scanned docs, images, reports
-- 🔍 Named Entity Recognition — names, dates, amounts
-- 📊 Table & structured data extraction from unstructured text
-- 🏷️ Document classification + abstractive summarization
-- 📤 Output: clean, queryable JSON / structured schema
-
-![PyMuPDF](https://img.shields.io/badge/PyMuPDF-FF5733?style=flat-square&logo=python&logoColor=white)
-![Transformers](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=flat-square&logo=spacy&logoColor=white)
-![OCR](https://img.shields.io/badge/Tesseract-4B8BBE?style=flat-square&logo=python&logoColor=white)
-
-</td>
-</tr>
-</table>
-
----
-
-<!-- OTHER PROJECTS GRID -->
-<div align="center">
-
-## 🚀 MORE PROJECTS
-
-</div>
-
-<table>
-<tr>
-<td width="50%">
-
-#### 🏥 Chest X-Ray Medical Diagnosis AI
-> Deep learning CNN detecting pneumonia & pulmonary conditions with clinical-grade accuracy.
-
-```
-Input: X-Ray Image (256×256)
-  └─► ResNet50 Backbone (ImageNet pretrained)
-       └─► Custom Classification Head
-            └─► Pathology Probability Map ✅
-```
-![TF](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-
-[![View](https://img.shields.io/badge/→%20VIEW%20REPO-22c55e?style=flat-square)](https://github.com/vivekkumarm09/Chest-X-Ray-Medical-Diagnosis-with-Deep-Learning-main)
-
-</td>
-<td width="50%">
-
-#### 💬 NLP Sentiment Analysis Engine
-> Production-grade text classification — VADER, TF-IDF, and transformer-based opinion mining.
-
-```
-Raw Text → Tokenize → Embedding
-  └─► Bi-LSTM / DistilBERT
-       └─► Positive / Negative / Neutral
-            └─► Confidence Score ✅
-```
-![NLTK](https://img.shields.io/badge/NLTK-3776AB?style=flat-square&logo=python&logoColor=white)
-![HF](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![SkLearn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-
-[![View](https://img.shields.io/badge/→%20VIEW%20REPO-f59e0b?style=flat-square)](https://github.com/vivekkumarm09/sentiment-analysis-project)
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### ✈️ Airlines Price Prediction
-> Ensemble ML for real-time airline fare forecasting. Feature-engineered from 10K+ flight records.
-
-```
-Features: Route · Season · Airline · Stops
-  └─► XGBoost + Random Forest Ensemble
-       └─► RMSE Optimized · R²: 0.91+ ✅
-```
-![XGB](https://img.shields.io/badge/XGBoost-337AB7?style=flat-square&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-
-[![View](https://img.shields.io/badge/→%20VIEW%20REPO-0ea5e9?style=flat-square)](https://github.com/vivekkumarm09/airlines-price-prediction)
-
-</td>
-<td width="50%">
-
-#### 🌾 Agricultural Production Optimization
-> AI-driven crop recommendation using soil, climate & geospatial data for precision farming.
-
-```
-Inputs: N · P · K · pH · Rainfall · Temp
-  └─► Decision Tree + SVM Classifier
-       └─► Optimal Crop Recommendation 🌱
-```
-![SKLearn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-4EACD6?style=flat-square&logo=python&logoColor=white)
-
-[![View](https://img.shields.io/badge/→%20VIEW%20REPO-16a34a?style=flat-square)](https://github.com/vivekkumarm09/data-science-project)
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### 🏠 Bangalore House Price Regression
-> Full regression pipeline with advanced feature engineering for real estate pricing.
-
-```
-EDA → Outlier Removal → One-Hot Encoding
-  └─► Linear Reg + Ridge + Lasso
-       └─► GridSearchCV → Best Model 🏆
-```
-![SKLearn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=python&logoColor=white)
-
-[![View](https://img.shields.io/badge/→%20VIEW%20REPO-db2777?style=flat-square)](https://github.com/vivekkumarm09/ITECH_INTERSHIP_TASK)
-
-</td>
-<td width="50%">
-
-#### 💓 Heart Disease Classification
-> Binary cardiac risk classification with SHAP explainability for clinical interpretability.
-
-```
-Features: Age · BP · Cholesterol · ECG
-  └─► Logistic Reg + Random Forest
-       └─► SHAP Feature Importance 🫀
-```
-![SKLearn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![SHAP](https://img.shields.io/badge/SHAP-FF6347?style=flat-square&logo=python&logoColor=white)
-
-[![View](https://img.shields.io/badge/→%20VIEW%20REPO-ef4444?style=flat-square)](https://github.com/vivekkumarm09/ITECH_INTERSHIP_TASK)
-
-</td>
-</tr>
-</table>
-
----
-
-<!-- GITHUB ANALYTICS -->
-<div align="center">
-
-## 📊 GitHub Intelligence Dashboard
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=vivekkumarm09&show_icons=true&count_private=true&theme=transparent&hide_border=true&bg_color=0d1117&title_color=00f5ff&icon_color=a855f7&text_color=c9d1d9&ring_color=00f5ff&border_radius=12" />
-<img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=vivekkumarm09&theme=transparent&hide_border=true&background=0d1117&ring=00f5ff&fire=a855f7&currStreakLabel=00f5ff&sideLabels=7dd3fc&dates=6b7280&border_radius=12" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=vivekkumarm09&bg_color=0d1117&color=00f5ff&line=a855f7&point=ffffff&area=true&area_color=00f5ff20&hide_border=true&radius=8" width="95%" />
-
-</div>
-
----
+<div class="divider"></div>
 
 <!-- TECH STACK -->
-<div align="center">
-
-## ⚙️ Full Stack of Capabilities
-
+<div class="section reveal">
+  <div class="section-label">// stack</div>
+  <div class="section-title">Tech Arsenal</div>
+  <div class="tech-cloud">
+    <span class="tech-pill"><span class="tech-dot" style="background:#3b82f6"></span>Python</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#ef4444"></span>TensorFlow</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#f97316"></span>PyTorch</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#d00000"></span>Keras</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#f59e0b"></span>HuggingFace</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#06b6d4"></span>spaCy</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#10b981"></span>LangChain</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#6366f1"></span>Scikit-Learn</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#8b5cf6"></span>XGBoost</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#ec4899"></span>Pandas</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#14b8a6"></span>NumPy</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#0ea5e9"></span>OpenCV</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#84cc16"></span>Matplotlib</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#f43f5e"></span>Seaborn</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#a855f7"></span>Plotly</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#64748b"></span>SQL</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#f37626"></span>Jupyter</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#f9ab00"></span>Google Colab</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#20beff"></span>Kaggle</span>
+    <span class="tech-pill"><span class="tech-dot" style="background:#f05032"></span>Git</span>
+  </div>
 </div>
 
-<table align="center">
-<tr>
-<td align="center" width="130">
+<div class="divider"></div>
 
-**Core**<br/>
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/-SQL-CC2927?style=flat-square&logo=postgresql&logoColor=white)
-![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-
-</td>
-<td align="center" width="160">
-
-**ML / AI**<br/>
-![TF](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![Keras](https://img.shields.io/badge/-Keras-D00000?style=flat-square&logo=keras&logoColor=white)
-![SkLearn](https://img.shields.io/badge/-Sklearn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-
-</td>
-<td align="center" width="160">
-
-**NLP / LLM**<br/>
-![HuggingFace](https://img.shields.io/badge/-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![spaCy](https://img.shields.io/badge/-spaCy-09A3D5?style=flat-square&logo=spacy&logoColor=white)
-![NLTK](https://img.shields.io/badge/-NLTK-3776AB?style=flat-square&logo=python&logoColor=white)
-![LangChain](https://img.shields.io/badge/-LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-
-</td>
-<td align="center" width="160">
-
-**Data & Viz**<br/>
-![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=flat-square&logo=python&logoColor=white)
-![Plotly](https://img.shields.io/badge/-Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
-
-</td>
-<td align="center" width="130">
-
-**Tools**<br/>
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![Colab](https://img.shields.io/badge/-Colab-F9AB00?style=flat-square&logo=googlecolab&logoColor=black)
-![Kaggle](https://img.shields.io/badge/-Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white)
-
-</td>
-</tr>
-</table>
-
----
-
-<!-- EXPERTISE SKILL MATRIX -->
-<div align="center">
-
-## 🧬 Expertise Matrix
-
+<!-- CONNECT -->
+<div class="section reveal" style="text-align:center">
+  <div class="section-label" style="text-align:center">// connect</div>
+  <div class="section-title">Let's Build Something Intelligent</div>
+  <p style="font-size:13px;color:#475569;margin:8px 0 0">Open to impactful AI/ML projects, research collaborations, and data science roles.</p>
+  <div class="connect-row">
+    <a href="https://www.linkedin.com/in/vivek-mishra-2619542a2" class="connect-btn btn-linkedin">LinkedIn</a>
+    <a href="https://github.com/vivekkumarm09" class="connect-btn btn-github">GitHub</a>
+    <a href="mailto:vivekkumarm09@gmail.com" class="connect-btn btn-email">Email</a>
+  </div>
 </div>
-
-```
-╔══════════════════════════════════════════════════════════════════════════════╗
-║                         VIVEK'S SKILL RADAR                                 ║
-╠══════════════════╦══════════════════════════════════════════════╦═══════════╣
-║  DOMAIN          ║  PROFICIENCY                                 ║  LEVEL    ║
-╠══════════════════╬══════════════════════════════════════════════╬═══════════╣
-║  Agentic AI      ║  ██████████████████████  ░░░░░░░░           ║  Advanced ║
-║  Document AI     ║  ████████████████████████░░░░░░░            ║  Advanced ║
-║  Deep Learning   ║  █████████████████████   ░░░░░░░░           ║  Advanced ║
-║  Machine Learn.  ║  ████████████████████████████░░             ║  Expert   ║
-║  NLP / LLMs      ║  █████████████████████░░░░░░░░░             ║  Advanced ║
-║  Computer Vision ║  ██████████████████████  ░░░░░░░░           ║  Advanced ║
-║  Data Analysis   ║  ████████████████████████████████           ║  Expert   ║
-║  Visualization   ║  ████████████████████████████████           ║  Expert   ║
-║  Feature Engg.   ║  ████████████████████████████░░░            ║  Expert   ║
-║  SQL / Databases ║  █████████████████████░░░░░░░░░             ║  Advanced ║
-╚══════════════════╩══════════════════════════════════════════════╩═══════════╝
-```
-
----
-
-<!-- TROPHIES -->
-<div align="center">
-
-## 🏆 Achievement Vault
-
-<img src="https://github-profile-trophy.vercel.app/?username=vivekkumarm09&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=6" />
-
-</div>
-
----
-
-<!-- CONTRIBUTION SNAKE -->
-<div align="center">
-
-## 🐍 Contribution Matrix
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%" />
-</picture>
-
-</div>
-
----
-
-<!-- ABOUT ME — CODE BLOCK -->
-<div align="center">
-
-## 👨‍💻 System Specs
-
-</div>
-
-```json
-{
-  "name"        : "Vivek Kumar Mishra",
-  "alias"       : "vivekkumarm09",
-  "role"        : "Data Science Engineer",
-  "location"    : "India 🇮🇳",
-  "linkedin"    : "vivek-mishra-2619542a2",
-  "core_focus"  : [
-    "Agentic AI — autonomous multi-step reasoning pipelines",
-    "Document Intelligence — OCR, NER, information extraction",
-    "Deep Learning — CNN, RNN, Transformers",
-    "Medical AI — chest X-ray diagnosis, health analytics",
-    "NLP — sentiment analysis, text classification",
-    "Agricultural AI — crop optimization, precision farming"
-  ],
-  "currently_learning" : ["LLM fine-tuning", "RAG systems", "MLOps pipelines"],
-  "philosophy"  : "Every dataset holds a truth. My job is to find it.",
-  "collaboration": "Open to impactful AI/ML projects 🤝",
-  "fun_fact"    : "I taught a machine to read X-rays before my morning coffee ☕"
-}
-```
-
----
 
 <!-- FOOTER -->
-<div align="center">
-
-## 🌐 Let's Build Something Intelligent Together
-
-<a href="https://www.linkedin.com/in/vivek-mishra-2619542a2">
-  <img src="https://img.shields.io/badge/LinkedIn-Vivek%20Kumar%20Mishra-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-&nbsp;
-<a href="https://github.com/vivekkumarm09">
-  <img src="https://img.shields.io/badge/GitHub-vivekkumarm09-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-&nbsp;
-<a href="mailto:vivekkumarm09@gmail.com">
-  <img src="https://img.shields.io/badge/Email-Reach%20Out-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-
-<br/><br/>
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" width="70%"/>
-
-<br/><br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050b2e,50:102a6b,100:050b2e&height=120&section=footer&text=⭐%20Star%20my%20repos%20if%20they%20helped%20you!&fontSize=16&fontColor=7dd3fc&animation=fadeIn&fontAlignY=65" width="100%" />
-
+<div class="footer">
+  <div class="footer-line"></div>
+  <div class="footer-quote">"Every dataset holds a truth. My job is to find it."</div>
+  <div class="footer-sig">Vivek Kumar Mishra &bull; Data Science Engineer &bull; India</div>
 </div>
 
-<!-- Made with passion by Vivek Kumar Mishra | "Intelligence is not given. It is engineered." -->
+<script>
+// PARTICLES
+const canvas = document.getElementById('particles');
+const ctx = canvas.getContext('2d');
+let W, H, pts = [];
+function resize(){W=canvas.width=window.innerWidth;H=canvas.height=Math.max(document.body.scrollHeight,window.innerHeight)}
+resize();window.addEventListener('resize',resize);
+for(let i=0;i<90;i++) pts.push({x:Math.random()*2000,y:Math.random()*2000,vx:(Math.random()-.5)*0.3,vy:(Math.random()-.5)*0.3,r:Math.random()*1.5+0.5,o:Math.random()*0.5+0.2});
+function drawParticles(){
+  ctx.clearRect(0,0,W,H);
+  pts.forEach(p=>{
+    p.x+=p.vx;p.y+=p.vy;
+    if(p.x<0||p.x>2000)p.vx*=-1;
+    if(p.y<0||p.y>2000)p.vy*=-1;
+    const sx=p.x*(W/2000),sy=p.y*(H/Math.max(H,2000));
+    ctx.beginPath();ctx.arc(sx,sy,p.r,0,Math.PI*2);
+    ctx.fillStyle=`rgba(0,245,255,${p.o})`;ctx.fill();
+  });
+  requestAnimationFrame(drawParticles);
+}
+drawParticles();
+
+// COUNT UP
+function countUp(el,target,dur){
+  let start=0,step=target/dur*16;
+  let t=setInterval(()=>{
+    start+=step;
+    if(start>=target){start=target;clearInterval(t)}
+    el.textContent=Math.round(start)+(target>50?'%':'+');
+  },16);
+}
+setTimeout(()=>{
+  countUp(document.getElementById('s1'),7,800);
+  countUp(document.getElementById('s2'),6,800);
+  countUp(document.getElementById('s3'),10,800);
+  countUp(document.getElementById('s4'),5,800);
+},400);
+
+// REVEAL ON SCROLL
+const reveals=document.querySelectorAll('.reveal');
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible')}});
+},{threshold:0.12});
+reveals.forEach(r=>obs.observe(r));
+
+// SKILL BARS
+const skillObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.querySelectorAll('.skill-bar').forEach(b=>{
+        setTimeout(()=>{b.style.width=b.dataset.w+'%'},100);
+      });
+    }
+  });
+},{threshold:0.3});
+document.querySelectorAll('#skills').forEach(s=>skillObs.observe(s));
+</script>
+</body>
+</html>
